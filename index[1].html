@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Recruitment Portal — Clerk Application</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div>Institution of Excellence</div>
+      <div class="top-links"><span>Recruitment</span><span>Candidate Login</span><span>Help</span></div>
+    </div>
+  </header>
+
+  <header class="brand">
+    <div class="container brand-inner">
+      <div class="brand-mark">UR</div>
+      <div>
+        <div class="brand-title">University Recruitment Portal</div>
+        <div class="brand-subtitle">Non-Teaching Recruitment & Online Applications</div>
+      </div>
+      <div class="portal-status"><span class="dot"></span> Applications Open</div>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#home">Home</a>
+      <a href="#notice">Recruitment Notice</a>
+      <a href="#eligibility">Eligibility</a>
+      <a class="active" href="#application">Apply Online</a>
+      <a href="#instructions">Instructions</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">CLERK RECRUITMENT • DEMO PORTAL</span>
+          <h1>Clerk <span>Online Application</span></h1>
+          <p class="hero-copy">Candidate-friendly application portal for the Clerk recruitment details supplied for this demo. Keep your Class 12 certificate and recent photograph ready.</p>
+          <div class="hero-stats"><div><b>1,320</b><span>Vacancies</span></div><div><b>18–25</b><span>Age</span></div><div><b>30 Oct 2026</b><span>Last Date</span></div></div>
+          <div class="hero-actions">
+            <a class="btn primary" href="#application">Start Application</a>
+            <a class="btn secondary" href="#instructions">View Instructions</a>
+          </div>
+        </div>
+        <div class="vacancy-banner"><strong>1,320</strong><span>Clerk Vacancies</span><div><b>18–25 Years</b><small>Age Limit</small></div><div><b>30/10/2026</b><small>Last Date</small></div></div>
+        <div class="notice-card" id="notice">
+          <div class="notice-icon">✓</div>
+          <div>
+            <div class="small-label">APPLICATION NOTICE</div>
+            <h3>Clerk — Candidate Application</h3>
+            <p>Qualification: <strong>12th / Senior Secondary</strong></p>
+            <p>Age: <strong>18–25 years</strong> · Last date: <strong>30 October 2026</strong></p>
+            <p>Department/Organization: <strong>University of Delhi</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-strip">
+      <div class="container cards">
+        <div class="quick-card"><b>01</b><span>Read eligibility</span></div>
+        <div class="quick-card"><b>02</b><span>Fill candidate details</span></div>
+        <div class="quick-card"><b>03</b><span>Add Class 12 details</span></div>
+        <div class="quick-card"><b>04</b><span>Review & submit</span></div>
+      </div>
+    </section>
+
+    <section class="content-section" id="eligibility">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">CLERK RECRUITMENT DETAILS</span>
+          <h2>Clerk Post — Eligibility Snapshot</h2>
+        </div>
+        <div class="eligibility-grid">
+          <div><span class="check">✓</span><div><strong>Minimum qualification</strong><p>12th / Senior Secondary or equivalent, subject to the official notification.</p></div></div>
+          <div><span class="check">✓</span><div><strong>Age limit</strong><p>18–25 years as supplied for this demo; verify the official notification for relaxations.</p></div></div>
+          <div><span class="check">✓</span><div><strong>Documents</strong><p>Keep photograph, identity proof and Class 12 certificate/marksheet ready.</p></div></div>
+          <div><span class="check">✓</span><div><strong>Application</strong><p>Enter details exactly as they appear on your official documents.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="application-wrap" id="application">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">ONLINE FORM</span>
+          <h2>Clerk Application Form</h2>
+          <p>Fields marked with <span class="required">*</span> are mandatory.</p>
+        </div>
+
+        <form id="applicationForm" novalidate>
+          <div class="progress"><div class="progress-fill" id="progressFill"></div></div>
+
+          <div class="form-card">
+            <div class="card-title"><span>01</span><div><h3>Post & Candidate Details</h3><p>Select the post and enter your basic information.</p></div></div>
+            <div class="form-grid">
+              <label>Post Applied For <span class="required">*</span>
+                <select name="post" required>
+                  <option value="">Select post</option><option selected>Clerk</option>
+                </select>
+              </label>
+              <label>Application Category <span class="required">*</span>
+                <select name="category" required>
+                  <option value="">Select category</option><option>UR</option><option>OBC</option><option>SC</option><option>ST</option><option>EWS</option><option>Other</option>
+                </select>
+              </label>
+              <label>Candidate Name <span class="required">*</span><input name="name" required placeholder="As per Class 10/12 certificate"></label>
+              <label>Father's / Guardian's Name <span class="required">*</span><input name="father" required></label>
+              <label>Date of Birth <span class="required">*</span><input name="dob" type="date" required></label>
+              <label>Gender <span class="required">*</span><select name="gender" required><option value="">Select</option><option>Male</option><option>Female</option><option>Other</option></select></label>
+              <label>Mobile Number <span class="required">*</span><input name="mobile" inputmode="numeric" maxlength="10" required placeholder="10-digit mobile number"></label>
+              <label>Email Address <span class="required">*</span><input name="email" type="email" required placeholder="name@example.com"></label>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <div class="card-title"><span>02</span><div><h3>Address Details</h3><p>Provide your current communication address.</p></div></div>
+            <div class="form-grid">
+              <label class="full">Address <span class="required">*</span><textarea name="address" required placeholder="House/Flat, Street, Village/Town, District"></textarea></label>
+              <label>State <span class="required">*</span><input name="state" required></label>
+              <label>District <span class="required">*</span><input name="district" required></label>
+              <label>PIN Code <span class="required">*</span><input name="pin" inputmode="numeric" maxlength="6" required></label>
+            </div>
+          </div>
+
+          <div class="form-card highlight">
+            <div class="card-title"><span>03</span><div><h3>Class 12 / Senior Secondary Qualification</h3><p>This section is specifically designed for candidates applying on the basis of 12th qualification.</p></div></div>
+            <div class="qualification-badge">12th Qualification Required</div>
+            <div class="form-grid">
+              <label>Qualification <span class="required">*</span><select name="qualification" required><option selected>12th / Senior Secondary</option><option>Equivalent Qualification</option></select></label>
+              <label>Board / Council <span class="required">*</span><input name="board" required placeholder="e.g. CBSE / State Board"></label>
+              <label>Passing Year <span class="required">*</span><select name="year" required><option value="">Select year</option><option>2026</option><option>2025</option><option>2024</option><option>2023</option><option>2022</option><option>2021</option><option>2020</option></select></label>
+              <label>Roll / Enrollment No. <span class="required">*</span><input name="roll" required></label>
+              <label>Maximum Marks <span class="required">*</span><input name="maxmarks" type="number" min="1" required></label>
+              <label>Marks Obtained <span class="required">*</span><input name="marks" type="number" min="0" required></label>
+              <label>Percentage <input name="percentage" id="percentage" readonly placeholder="Auto calculated"></label>
+              <label>Division / Grade <input name="grade"></label>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <div class="card-title"><span>04</span><div><h3>Documents & Declaration</h3><p>Upload/record the required candidate documents.</p></div></div>
+            <div class="form-grid">
+              <label>Recent Photograph <span class="required">*</span><input name="photo" type="file" accept="image/*" required></label>
+              <label>Class 12 Certificate / Marksheet <span class="required">*</span><input name="marksheet" type="file" accept=".pdf,image/*" required></label>
+              <label>Identity Proof <span class="required">*</span><input name="idproof" type="file" accept=".pdf,image/*" required></label>
+            </div>
+            <label class="declaration">
+              <input type="checkbox" name="declaration" required>
+              <span>I declare that the information entered by me is true and correct to the best of my knowledge. I understand that the final application will be subject to verification against the recruitment notification and original documents.</span>
+            </label>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn secondary" id="saveDraft">Save Draft</button>
+            <button type="submit" class="btn primary">Review Application</button>
+          </div>
+          <p class="demo-note">Demo portal: the vacancy figures and dates above are the details supplied by the site owner and are not represented as an official University of Delhi notification. Verify the official notification before accepting applications or payments.</p>
+        </form>
+
+        <div class="review-card hidden" id="reviewCard">
+          <div class="success-icon">✓</div>
+          <h2>Application Review</h2>
+          <p>Please verify your entries before the final submission step.</p>
+          <div id="reviewContent" class="review-grid"></div>
+          <div class="form-actions">
+            <button class="btn secondary" id="editApplication">Edit Details</button>
+            <button class="btn primary" id="finalSubmit">Submit Application</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="instructions" id="instructions">
+      <div class="container two-col">
+        <div>
+          <span class="eyebrow">IMPORTANT</span>
+          <h2>Before you submit</h2>
+          <ul>
+            <li>Use the same spelling of your name as on your educational certificate.</li>
+            <li>Check mobile number and email carefully.</li>
+            <li>Enter Class 12 marks exactly as shown on the marksheet.</li>
+            <li>Read the official recruitment notification for age, reservation, fee and other conditions.</li>
+          </ul>
+        </div>
+        <div class="help-box" id="contact">
+          <h3>Need help?</h3>
+          <p>For a real deployment, connect this form to your application database and provide an official helpdesk number/email here.</p>
+          <div class="help-line">Recruitment Helpdesk</div>
+          <div>Mon–Fri · 10:00 AM–5:00 PM</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div><strong>University Recruitment Portal</strong><p>Online application interface for non-teaching recruitment.</p></div>
+      <div><strong>Quick Links</strong><p>Recruitment Notice · Eligibility · Instructions · Contact</p></div>
+      <div><strong>Important</strong><p>This demo is not an official university/government website.</p></div>
+    </div>
+    <div class="footer-bottom">© 2026 Recruitment Portal · Demo Interface · Not an official University of Delhi website</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
